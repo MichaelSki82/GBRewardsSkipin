@@ -9,5 +9,6 @@ public class Reward
     public int Count;
     public RewardType Type;
     public Sprite Icon;
+    RewardPeriods TimePeriod;
     
 }

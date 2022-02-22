@@ -5,7 +5,7 @@ using UnityEngine;
 public class Root : MonoBehaviour
 {
     [SerializeField]
-    private DailyRewardView _rewardView;
+    private RewardView _rewardView;
 
     private DailyRewardController _controller;
 
