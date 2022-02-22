@@ -24,7 +24,7 @@ public class RewardView : MonoBehaviour
     [SerializeField]
     public int TimeCooldownWeekly = 604800;
     [SerializeField]
-    public int TimeDeadlineWeekly = 1209600;
+    public int TimeDeadlineWeekly = 172800;
 
     [Space]
     [Header("RewardSettings")]
@@ -42,6 +42,8 @@ public class RewardView : MonoBehaviour
     public Transform SlotsParent;
     [SerializeField]
     public SlotRewardView SlotPrefab;
+    [SerializeField]
+    public SlotRewardWeeklyView SlotPrefabWeekly;
     [SerializeField]
     public Button ResetButton;
     [SerializeField]
@@ -71,8 +73,8 @@ public class RewardView : MonoBehaviour
 
     public int CurrentActiveSlotWeekly
     {
-        get => PlayerPrefs.GetInt(ActiveSlotKeyDaily);
-        set => PlayerPrefs.SetInt(ActiveSlotKeyDaily, value);
+        get => PlayerPrefs.GetInt(ActiveSlotKeyWeekly);
+        set => PlayerPrefs.SetInt(ActiveSlotKeyWeekly, value);
     }
 
 

@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 118, y: -500}
+  m_AnchoredPosition: {x: 118, y: -450}
   m_SizeDelta: {x: 171.69946, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &21627427
@@ -157,7 +157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600612104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -781, y: -20, z: 0}
+  m_LocalPosition: {x: -781, y: 40, z: 0}
   m_LocalScale: {x: 2.066862, y: 2.066862, z: 2.066862}
   m_Children:
   - {fileID: 1168588115}
@@ -347,7 +347,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: 1660.8613, y: 402.1021}
+  m_SizeDelta: {x: 1000, y: 402.1021}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578926805
 MonoBehaviour:
@@ -955,7 +955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeCooldownDaily: 8
   TimeDeadlineDaily: 172800
-  TimeCooldownWeekly: 604800
+  TimeCooldownWeekly: 20
   TimeDeadlineWeekly: 1209600
   DailyRewards:
   - Count: 100
@@ -996,6 +996,8 @@ MonoBehaviour:
   RewardTimerWeekly: {fileID: 21627426}
   SlotsParent: {fileID: 904241035818933802}
   SlotPrefab: {fileID: 4005562293174495102, guid: 37bf757e72aab96429e7985dc0e25f78,
+    type: 3}
+  SlotPrefabWeekly: {fileID: 6576978224924849508, guid: e0a9f4c87dd6a054687c51262bf7a455,
     type: 3}
   ResetButton: {fileID: 904241035382209702}
   GetRewardButtonDaily: {fileID: 904241036130064381}
